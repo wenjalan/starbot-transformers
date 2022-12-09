@@ -20,9 +20,40 @@ Several methods of tokenization and padding were used, in order to generate text
 
 The model outputted quite high perplexity (in the 2000s) even after training for an hour, indicating that the model was still pretty confused about what the hell was going on in the training examples I gave it.
 
+## Training procedure
+
+### Training hyperparameters
+
+The following hyperparameters were used during training:
+- learning_rate: 0.005
+- train_batch_size: 8
+- eval_batch_size: 8
+- seed: 42
+- optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08
+- lr_scheduler_type: linear
+- num_epochs: 10
+
+### Training results
+
+| Training Loss | Epoch | Step  | Validation Loss |
+|:-------------:|:-----:|:-----:|:---------------:|
+| 3.3942        | 1.0   | 2992  | 3.3385          |
+| 3.2566        | 2.0   | 5984  | 3.2760          |
+| 3.4112        | 3.0   | 8976  | 3.4710          |
+| 3.4887        | 4.0   | 11968 | 3.5264          |
+| 3.4856        | 5.0   | 14960 | 3.5181          |
+| 3.4359        | 6.0   | 17952 | 3.5079          |
+| 3.4115        | 7.0   | 20944 | 3.4954          |
+| 3.3657        | 8.0   | 23936 | 3.4482          |
+| 3.3018        | 9.0   | 26928 | 3.4207          |
+| 3.2435        | 10.0  | 29920 | 3.4079          |
+
 # Results
 Overall, the model is functional, but not fine-tuned to the degree which I would say is satisfactory. The ultimate metric for success, believability, isn't satisfied as the model's outputted messages start off believable but struggle to stay on-course the further it goes on. But it does generate some funny messages sometimes, which is the second-most important metric.
 
 # Examples
+![chat-1.png](img/chat-1.png)
+![chat-2.png](img/chat-2.png)
+![chat-3.png](img/chat-3.png)
 
 # Video
