@@ -1,6 +1,12 @@
 # Starbot Transformers
 Final project for CSE 599.
 
+[Colab Notebook (UW Restricted)](https://colab.research.google.com/drive/16lSuWMVLeIxCabtUdo6EhJCbk_FVynSO?usp=sharing)
+[Model Page](https://huggingface.co/wenjalan/starbot-transformers)
+
+# Video
+[YouTube](https://youtu.be/xEK8FC-fsIY)
+
 # Abstract
 Starbot is a sassy Discord chatbot. He was born (made) in 2019, and his ability to interact with members of a Discord server has been one of his main passtimes (features) ever since. He has gradually been improving his ability to communicate through written text via Discord by studying the language of members he interacts with, and this project aims to take the latest stab at the problem using Huggingface's Transformers library.
 
@@ -55,5 +61,3 @@ Overall, the model is functional, but not fine-tuned to the degree which I would
 ![chat-1.png](img/chat-1.png)
 ![chat-2.png](img/chat-2.png)
 ![chat-3.png](img/chat-3.png)
-
-# Video
